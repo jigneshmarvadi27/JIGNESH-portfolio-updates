@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-image: url('images/top-view-work-desk-with-drawing-pad-glasses-with-copy-space.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #f1f1f1;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #e0a458; /* Highlight color */
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.about-text {
+  max-width: 60%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #e0a458;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.highlighted-name {
+  color: #e0a458;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.name-and-gif {
+  display: inline-block;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between the name and GIF */
+}
+
+.name-gif {
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+}
+
+.profile-image {
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Ensure width and height are equal */
+  border-radius: 50%; /* Makes the image circular */
+  background-color: #1D1616; /* Background color around the image */
+  padding: 10px; /* Space between image and the background */
+  border: 2px solid #1D1616; /* Optional border around the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a polished look */
+  object-fit: cover; /* Ensures the image fits nicely within the circle */
+}
+
+
+/* Contact Section */
+.contact-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  margin: 0 15px;
+}
+
+.contact-icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .about-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-gif {
+    max-width: 50%;
+    margin-top: 20px;
+  }
+}

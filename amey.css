@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-image: url('images/top-view-work-desk-with-drawing-pad-glasses-with-copy-space.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f1f1f1;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #e0a458;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  margin: 20px auto;
+  width: 70%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.image-container {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-images {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.scroll-images img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.details-container {
+  width: 45%;
+  padding: 20px;
+}
+
+.details-container h3 {
+  font-size: 2rem;
+  color: #e0a458;
+}
+
+.details-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Back Button */
+footer {
+  text-align: center;
+  margin: 20px;
+}
+
+.back-button {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #e0a458;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #d19041;
+}
+
+/* Infinite Scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container,
+  .details-container {
+    width: 100%;
+  }
+
+  .details-container {
+    margin-top: 20px;
+  }
+}
+
+  
+  
